@@ -17,3 +17,15 @@ This can also be done using
 ```
 ls| du -h --max-depth=1 | sort -n
 ```
+Find the location of process by providing process-id
+```
+pwdx <pid>
+```
+To get the process that is using x port XXXX
+```
+lsof -i:XXXX
+```
+list the ports that are currently used/busy
+```
+ lsof -i -P -n | grep LISTEN
+ ```
